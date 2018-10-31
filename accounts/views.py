@@ -1,5 +1,6 @@
 from django.contrib.auth.views import LoginView
 from django.contrib import messages
+from django.http import HttpResponse
 from django.template.loader import render_to_string
 
 
