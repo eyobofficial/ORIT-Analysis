@@ -3,8 +3,7 @@ python:
     - "3.6"
 
 install:
-    - pip install -r requirements/base.txt
-    - pip install psycopg2 --quiet
+    - pipenv install
 
 services:
     - postgresql
