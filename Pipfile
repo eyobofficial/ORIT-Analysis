@@ -6,6 +6,12 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
+django = "==2.1.7"
+python-decouple = "*"
+django-authtools = "*"
+django-post-office = "*"
+mysqlclient = "*"
+django-extensions = "*"
 
 [requires]
 python_version = "3.6"
