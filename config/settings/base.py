@@ -37,6 +37,7 @@ INSTALLED_APPS = [
 # Third Party apps
 INSTALLED_APPS += [
     'authtools',
+    'post_office',
 ]
 
 # Project apps
@@ -141,3 +142,6 @@ AUTH_USER_MODEL = 'accounts.User'
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/dashboard/'
 LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+# Email Backend
+EMAIL_BACKEND = 'post_office.EmailBackend'
