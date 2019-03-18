@@ -6,7 +6,6 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-django = "==2.1.2"
 django-authtools = "==1.6.0"
 django-extensions = "==2.0.7"
 django-post-office = "==3.1.0"
@@ -17,6 +16,7 @@ pytz = "==2018.5"
 six = "==1.11.0"
 typing = "==3.6.4"
 mysqlclient = "==1.4.2.post1"
+django = "==2.1.7"
 
 [requires]
 python_version = "3.6"
