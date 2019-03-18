@@ -3,12 +3,12 @@ language: python
 python:
     - "3.6"
 
-services:
-    - postgresql
-
 install:
     - pip install pipenv
     - pipenv sync
+
+services:
+    - mysql
 
 script:
     - python manage.py test
