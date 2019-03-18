@@ -7,8 +7,8 @@ services:
     - postgresql
 
 install:
-    - 'pip install pipenv'
-    - 'pipenv sync'
+    - pip install pipenv
+    - pipenv sync
 
 script:
-    python manage.py test
+    - python manage.py test
