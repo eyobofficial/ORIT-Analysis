@@ -1,0 +1,13 @@
+language: python
+python:
+    - "3.6"
+
+install:
+    - pip install -r requirements/base.txt
+    - pip install mysqlclient --quiet
+
+services:
+    - mysql
+
+script:
+    python manage.py test
