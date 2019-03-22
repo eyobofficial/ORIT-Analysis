@@ -1,6 +1,10 @@
 from django.contrib import admin
+from django.contrib.auth import get_user_model
 
-from .models import User, Profile
+from .models import Profile
+
+
+User = get_user_model()
 
 
 class ProfileInline(admin.StackedInline):
@@ -10,8 +14,8 @@ class ProfileInline(admin.StackedInline):
 @admin.register(User)
 class UserAdmin(admin.ModelAdmin):
     list_display = (
-        'email', 'get_full_name', 'is_active',
-        'is_staff', 'is_superuser'
+        'email', 'username', 'get_full_name',
+        'is_active', 'is_staff', 'is_superuser'
     )
     list_filter = ('is_active', 'is_staff', 'is_superuser')
     inlines = (ProfileInline, )

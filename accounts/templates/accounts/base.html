@@ -2,37 +2,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900' rel='stylesheet' type='text/css'>
 
-    <!-- Page title -->
-    <title>{% block title %} Orit Price Analysis {% endblock %}</title>
+  <!-- Page title -->
+  <title>{% block title %} Orit Price Analysis {% endblock %}</title>
 
-    <!-- Vendor styles -->
-    <link rel="stylesheet" href="{% static 'luna/vendor/fontawesome/css/font-awesome.css' %}"/>
-    <link rel="stylesheet" href="{% static 'luna/vendor/animate.css/animate.css' %}"/>
-    <link rel="stylesheet" href="{% static 'luna/vendor/bootstrap/css/bootstrap.css' %}"/>
-    <link rel="stylesheet" href="{% static 'luna/vendor/toastr/toastr.min.css' %}"/>
+  <!-- Vendor styles -->
+  <link rel="stylesheet" href="{% static 'luna/vendor/fontawesome/css/font-awesome.css' %}"/>
+  <link rel="stylesheet" href="{% static 'luna/vendor/animate.css/animate.css' %}"/>
+  <link rel="stylesheet" href="{% static 'luna/vendor/bootstrap/css/bootstrap.css' %}"/>
+  <link rel="stylesheet" href="{% static 'luna/vendor/toastr/toastr.min.css' %}"/>
 
-    {% block vendor_stylesheet %}{% endblock %}
+  {% block vendor_stylesheet %}{% endblock %}
 
-    <!-- App styles -->
-    <link rel="stylesheet" href="{% static 'luna/styles/pe-icons/pe-icon-7-stroke.css' %}"/>
-    <link rel="stylesheet" href="{% static 'luna/styles/pe-icons/helper.css' %}"/>
-    <link rel="stylesheet" href="{% static 'luna/styles/stroke-icons/style.css' %}"/>
-    <link rel="stylesheet" href="{% static 'luna/styles/theme.css' %}">
+  <!-- App styles -->
+  <link rel="stylesheet" href="{% static 'luna/styles/pe-icons/pe-icon-7-stroke.css' %}"/>
+  <link rel="stylesheet" href="{% static 'luna/styles/pe-icons/helper.css' %}"/>
+  <link rel="stylesheet" href="{% static 'luna/styles/stroke-icons/style.css' %}"/>
+  <link rel="stylesheet" href="{% static 'luna/styles/theme.css' %}">
+  <link rel="stylesheet" href="{% static 'accounts/css/style.css' %}">
 
-    {% block custom_stylesheet %}{% endblock %}
+  {% block custom_stylesheet %}{% endblock %}
 </head>
 
 <body class="blank">
 
 <!-- Wrapper-->
 <div class="wrapper">
-    {% block content %}{% endblock %}
+  {% block content %}{% endblock %}
 </div>
 <!-- End wrapper-->
 

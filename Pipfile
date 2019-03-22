@@ -12,6 +12,7 @@ django-authtools = "*"
 django-post-office = "*"
 mysqlclient = "*"
 django-extensions = "*"
+factory-boy = "*"
 
 [requires]
 python_version = "3.6"
