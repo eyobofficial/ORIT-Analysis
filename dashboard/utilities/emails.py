@@ -3,6 +3,7 @@ from django.template.loader import render_to_string
 
 from post_office import mail
 
+
 # User Model
 User = get_user_model()
 

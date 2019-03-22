@@ -42,8 +42,8 @@ INSTALLED_APPS += [
 
 # Project apps
 INSTALLED_APPS += [
-    'accounts',
-    'dashboard',
+    'accounts.apps.AccountsConfig',
+    'dashboard.apps.DashboardConfig',
 ]
 
 MIDDLEWARE = [
@@ -111,6 +111,19 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Authentications
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'accounts.backends.EmailBackend'
+]
+
+AUTH_USER_MODEL = 'accounts.CustomUser'
+LOGIN_URL = '/accounts/login/'
+LOGIN_REDIRECT_URL = '/dashboard/'
+LOGOUT_REDIRECT_URL = '/accounts/login/'
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.0/topics/i18n/
 
@@ -137,11 +150,6 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
-# Custom Auth User Model
-AUTH_USER_MODEL = 'accounts.User'
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/dashboard/'
-LOGOUT_REDIRECT_URL = '/accounts/login/'
-
 # Email Backend
+
 EMAIL_BACKEND = 'post_office.EmailBackend'
