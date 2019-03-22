@@ -1,6 +1,6 @@
 [
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 1,
         "fields": {
             "title": "Earthwork",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 2,
         "fields": {
             "title": "Concrete Works",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 3,
         "fields": {
             "title": "Block Works",
@@ -24,7 +24,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 4,
         "fields": {
             "title": "Steel Works",
@@ -32,7 +32,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 5,
         "fields": {
             "title": "Glazing Works",
@@ -40,7 +40,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 6,
         "fields": {
             "title": "Painting Works",
@@ -48,7 +48,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 7,
         "fields": {
             "title": "Finishing Works",
@@ -56,7 +56,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 8,
         "fields": {
             "title": "Electrical Installations",
@@ -64,7 +64,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 9,
         "fields": {
             "title": "Sanitary Installations",
@@ -72,7 +72,7 @@
         }
     },
     {
-        "model": "shared.constructioncategory",
+        "model": "shared.work",
         "pk": 10,
         "fields": {
             "title": "Site Works",
