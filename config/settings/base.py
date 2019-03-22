@@ -44,6 +44,7 @@ INSTALLED_APPS += [
 INSTALLED_APPS += [
     'accounts.apps.AccountsConfig',
     'dashboard.apps.DashboardConfig',
+    'shared.apps.SharedConfig',
 ]
 
 MIDDLEWARE = [
