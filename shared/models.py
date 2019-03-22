@@ -41,13 +41,14 @@ class ConstructionCategory(models.Model):
     Example: Earthworks, Concrete, Block Work, Electric Installation
     """
     title = models.CharField(max_length=120)
-    icon = models.CharField(max_length=120)
+    icon = models.CharField(max_length=120, blank=True)
     order = models.IntegerField(unique=True)
     description = models.TextField(blank=True)
 
     class Meta:
         verbose_name = 'Construction Category'
         verbose_name_plural = 'Construction Categories'
+        ordering = ('order', )
 
     def __str__(self):
         return self.title

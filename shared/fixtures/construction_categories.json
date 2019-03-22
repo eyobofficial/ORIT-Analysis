@@ -1,0 +1,82 @@
+[
+    {
+        "model": "shared.constructioncategory",
+        "pk": 1,
+        "fields": {
+            "title": "Earthwork",
+            "order": 1
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 2,
+        "fields": {
+            "title": "Concrete Works",
+            "order": 2
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 3,
+        "fields": {
+            "title": "Block Works",
+            "order": 3
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 4,
+        "fields": {
+            "title": "Steel Works",
+            "order": 4
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 5,
+        "fields": {
+            "title": "Glazing Works",
+            "order": 5
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 6,
+        "fields": {
+            "title": "Painting Works",
+            "order": 6
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 7,
+        "fields": {
+            "title": "Finishing Works",
+            "order": 7
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 8,
+        "fields": {
+            "title": "Electrical Installations",
+            "order": 8
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 9,
+        "fields": {
+            "title": "Sanitary Installations",
+            "order": 9
+        }
+    },
+    {
+        "model": "shared.constructioncategory",
+        "pk": 10,
+        "fields": {
+            "title": "Site Works",
+            "order": 10
+        }
+    }
+]
