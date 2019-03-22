@@ -35,10 +35,10 @@ class Client(BaseCompany):
     pass
 
 
-class ConstructionCategory(models.Model):
+class Work(models.Model):
     """
-    Major construction categories.
-    Example: Earthworks, Concrete, Block Work, Electric Installation
+    Major construction works.
+    Example: Earthworks, Concrete works, Block work, Electric installation
     """
     title = models.CharField(max_length=120)
     icon = models.CharField(max_length=120, blank=True)
@@ -46,8 +46,8 @@ class ConstructionCategory(models.Model):
     description = models.TextField(blank=True)
 
     class Meta:
-        verbose_name = 'Construction Category'
-        verbose_name_plural = 'Construction Categories'
+        verbose_name = 'Work'
+        verbose_name_plural = 'Works'
         ordering = ('order', )
 
     def __str__(self):

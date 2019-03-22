@@ -1,7 +1,6 @@
 from django.contrib import admin
 
-from .models import Activity, Contractor, Consultant, Client, \
-    ConstructionCategory
+from .models import Activity, Contractor, Consultant, Client, Work
 
 
 @admin.register(Activity)
@@ -10,8 +9,8 @@ class ActivityAdmin(admin.ModelAdmin):
     search_fields = ('name', )
 
 
-@admin.register(ConstructionCategory)
-class ConstractionCategoryAdmin(admin.ModelAdmin):
+@admin.register(Work)
+class WorkAdmin(admin.ModelAdmin):
     list_display = ('title', 'order')
     search_fields = ('title', 'description')
 
