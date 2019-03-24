@@ -1,14 +1,14 @@
 from django.contrib import messages
 from django.shortcuts import redirect
 from django.urls import reverse
-from django.views.generic import DetailView
+from django.views.generic import DetailView, TemplateView
 
 from post_office.models import Email
 
-from .mixins import DashboardMixin
+from .mixins import BaseDashboardMixin
 
 
-class OverviewView(DashboardMixin):
+class OverviewView(BaseDashboardMixin, TemplateView):
     template_name = 'dashboard/overview.html'
 
 

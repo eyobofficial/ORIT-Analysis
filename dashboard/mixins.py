@@ -1,11 +1,5 @@
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import TemplateView
+from shared.mixins import BaseViewMixin
 
 
-class DashboardMixin(LoginRequiredMixin, TemplateView):
+class BaseDashboardMixin(BaseViewMixin):
     menu = 'dashboard'
-
-    def get_context_data(self, **kwargs):
-        context = super().get_context_data(**kwargs)
-        context['menu'] = self.menu
-        return context
