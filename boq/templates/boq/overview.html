@@ -1,0 +1,116 @@
+{% extends 'boq/base.html' %}
+
+{% block content %}
+  <!-- Header -->
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="view-header">
+        <div class="pull-right text-right" style="line-height: 14px">
+          <button class="btn btn-default">New Analysis</button>
+        </div>
+        <div class="header-icon">
+          <i class="pe page-header-icon pe-7s-calculator"></i>
+        </div>
+        <div class="header-title">
+          <h3>Price Analysis</h3>
+          <small>Overview of all your price analysis</small>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+  <!-- Search bar -->
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="panel panel-filled">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="input-group m-b-xs">
+                <input class="form-control" type="text" placeholder="Search by Title.." style="width: 100%">
+                <div class="input-group-btn">
+                  <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <select class="form-control" name="account" style="width: 100%">
+                <option selected="">Select project</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Price analysis list -->
+  <div class="row m-t-sm">
+    <div class="col-sm-12">
+      <div class="panel panel-filled price-analysis-list">
+        <div class="panel-body">
+          <div class="row">
+              <div class="col-md-6">
+                <div class="media">
+                  <h4 class="m-t-xs m-b-xs">
+                    <a href="#">Electrical Installation for Guard House</a>
+                  </h4>
+                  <div class="m-b-sm c-white small">
+                    <span><i class="fa fa-clock-o"></i>&nbsp; Updated on Sep 26, 2018</span>&nbsp;&nbsp;&nbsp;
+                    <span title="Construction project"><i class="fa fa-map-marker"></i>&nbsp; Zemen Bank</span>
+                  </div>
+                  <small class="text-justify">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta voluptates at vero provident repellendus, minus, possimus reprehenderit odio veritatis enim temporibus consequatur error. Quam inventore consectetur ullam, tempora vitae!
+                  </small>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <table class="table small m-t-sm">
+                  <tbody>
+                  <tr>
+                    <td>
+                      <strong class="c-white">4</strong> Categories
+                    </td>
+                    <td>
+                      <strong class="c-white">12</strong> Items
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="c-white">20</strong> Breakdowns
+                    </td>
+                    <td>
+                      <strong class="c-white">3</strong> Blocks
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <strong class="c-white">30</strong> Materials
+                    </td>
+                    <td title="Current status">
+                      <span class="label label-danger">Closed</span>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-3 m-t-sm">
+              <span class="c-white">Lorem ipsum dor</span>
+              <br>
+              <small>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry
+              </small>
+              <div class="btn-group m-t-sm">
+                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-download"></i> Download</a>
+                <a href="#" class="btn btn-default btn-sm"><i class="fa fa-edit"></i> Edit</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.row -->
+{% endblock %}
