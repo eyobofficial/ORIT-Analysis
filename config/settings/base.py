@@ -45,7 +45,7 @@ INSTALLED_APPS += [
     'accounts.apps.AccountsConfig',
     'dashboard.apps.DashboardConfig',
     'shared.apps.SharedConfig',
-    'boq.apps.BoqConfig',
+    'price_analysis.apps.PriceAnalysisConfig',
 ]
 
 MIDDLEWARE = [
