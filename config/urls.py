@@ -20,5 +20,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('accounts/', include('accounts.urls', namespace='accounts')),
     path('dashboard/', include('dashboard.urls', namespace='dashboard')),
-    path('boq/', include('boq.urls', namespace='boq'))
+    path(
+        'price-analysis/',
+        include('price_analysis.urls', namespace='price-analysis')
+    )
 ]
