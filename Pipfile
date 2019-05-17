@@ -13,6 +13,10 @@ django-post-office = "*"
 mysqlclient = "*"
 django-extensions = "*"
 factory-boy = "*"
+djangorestframework = "*"
+markdown = "*"
+djang-filter = "*"
+django-filter = "*"
 
 [requires]
 python_version = "3.6"
