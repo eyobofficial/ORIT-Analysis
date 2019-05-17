@@ -15,7 +15,6 @@ django-extensions = "*"
 factory-boy = "*"
 djangorestframework = "*"
 markdown = "*"
-djang-filter = "*"
 django-filter = "*"
 
 [requires]
