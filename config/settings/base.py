@@ -36,14 +36,15 @@ INSTALLED_APPS = [
 
 # Third Party apps
 INSTALLED_APPS += [
-    'authtools',
+    'django_filters',
+    'rest_framework',
+    'rest_framework.authtoken',
     'post_office',
 ]
 
 # Project apps
 INSTALLED_APPS += [
     'accounts.apps.AccountsConfig',
-    'dashboard.apps.DashboardConfig',
     'shared.apps.SharedConfig',
     'price_analysis.apps.PriceAnalysisConfig',
 ]
@@ -121,9 +122,6 @@ AUTHENTICATION_BACKENDS = [
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
-LOGIN_URL = '/accounts/login/'
-LOGIN_REDIRECT_URL = '/dashboard/'
-LOGOUT_REDIRECT_URL = '/accounts/login/'
 
 
 # Internationalization
@@ -144,9 +142,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
-)
+STATIC_ROOT = 'static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
@@ -155,3 +151,15 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # Email Backend
 
 EMAIL_BACKEND = 'post_office.EmailBackend'
+
+
+# REST Framework
+
+REST_FRAMEWORK = {
+    'DEFAULT_FILTER_BACKENDS': (
+        'django_filters.rest_framework.DjangoFilterBackend',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
